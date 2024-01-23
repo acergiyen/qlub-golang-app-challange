@@ -1,0 +1,4 @@
+app:
+  name: qlub-calculator-api
+  environment: staging
+  port: 8080
