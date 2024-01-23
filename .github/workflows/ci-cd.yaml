@@ -19,7 +19,7 @@ jobs:
         go-version: 1.21
 
     - name: Build
-      run: go build -o ./bin/crawler ./cmd/crawler/main.go 
+      run: go build -o ./bin/qlub-calculator-api ./cmd/qlub-calculator-api/main.go 
 
     - name: Run Unit Tests
       run: make unit-test
