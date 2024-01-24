@@ -36,11 +36,11 @@ Add `SPEC_FILE_PATH="../../config"` ENV variable in anyway and run `main.go` fil
 ### Option 2 - Docker Container 
 - Build the image
 
-`docker build -t qlub-calculator-api:latest . && make build`
+`docker build -t qlub-calculator-api:latest . || make build`
 
 - Run the container
 
-`docker run -p 8080:8080 qlub-calculator-api:latest && make run`
+`docker run -p 8080:8080 qlub-calculator-api:lates || make run`
 
 ## Run Unit Test
 You can run the unit test with coverage using the `make unit-test-with-coverage` command.
