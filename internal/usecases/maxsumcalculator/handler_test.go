@@ -27,7 +27,7 @@ var _ = Describe("MaxSumCalculator", func() {
 	lgr := log.New(&buff, "", log.LstdFlags)
 	calculator = maxsumcalculator.NewMaxSumCalculator(lgr)
 
-	Context("testdata come", func() {
+	Context("MaxSumCalculator", func() {
 		When("data comes from testcase1", func() {
 			BeforeEach(func() {
 				jsonData, _ := os.ReadFile("testdata/testcase1.json")

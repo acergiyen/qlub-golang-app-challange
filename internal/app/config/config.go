@@ -15,6 +15,7 @@ const (
 	configPathEnvKey = "SPEC_FILE_PATH"
 )
 
+// Config represents the structured configuration settings.
 type Config struct {
 	App struct {
 		Name        string `mapstructure:"name" validate:"required"`
@@ -23,6 +24,7 @@ type Config struct {
 	} `mapstructure:"app" validate:"required"`
 }
 
+// GetConfig retrieves the configuration settings.
 func GetConfig() (*Config, error) {
 	configPath := os.Getenv(configPathEnvKey)
 	if configPath == "" {
